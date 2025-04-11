@@ -1,6 +1,8 @@
 :root {
     --primary-color: #F07807;
     --secundary-color: #F7E5D8;
+    --default-shadow: 0 5px 8px #0005;
+    --default-padding: 0 80px;
 }
 
 * {
@@ -14,12 +16,12 @@ a {
     color: inherit;
 }
 
-ul, ol, li {
+menu, ol, li {
     list-style: none;
 }
 
 body {
-    padding: 0 80px;
+    
     font-family: "Poppins", sans-serif;
     background-color: var(--secundary-color);
 }
@@ -27,14 +29,15 @@ body {
 header {
     position: fixed;
     height: 60px;
-    width: calc(100% - 160px);
+    width: 100vw;
     top: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: var(--default-padding);
 }
 
-header ul {
+header menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +52,7 @@ header li {
 
 header li:hover {
     background-color: var(--secundary-color);
-    box-shadow: 0 5px 8px #0005;
+    box-shadow: var(--default-shadow);
 }
 
 .login {
@@ -58,7 +61,7 @@ header li:hover {
     border-radius: 12px;
     border: none;
     background-color: var(--secundary-color);
-    box-shadow: 0 5px 8px #0005;
+    box-shadow: var(--default-shadow);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +69,26 @@ header li:hover {
 }
 
 main {
-    height: 500px;
+    
+}
+
+section {
+    height: 100vh;
+    padding: var(--default-padding);
+}
+
+.home {
+    background-image: url(./img/background-menu.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.cardapio {
+    background-color: plum;
+}
+
+.servicos {
+    background-color: aquamarine;
 }
 
 footer {
