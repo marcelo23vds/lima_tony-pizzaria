@@ -68,10 +68,6 @@ header li:hover {
     gap: 8px;
 }
 
-main {
-    
-}
-
 section {
     height: 100vh;
     padding: var(--default-padding);
@@ -115,15 +111,23 @@ section {
 .pizza {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: end;
     border-radius: 12px;
+}
+
+.overflow {
+    position: absolute;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .add-pizza {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    display: none;
+    right: -16px;
+    top: -16px;
     width: 40px;
     height: 40px;
     background-color: var(--primary-color);
