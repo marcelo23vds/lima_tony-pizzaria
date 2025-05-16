@@ -1,5 +1,5 @@
 # TONY PIZZARIA
-![](./img/preview.PNG)
+![](./img/preview.png)
 
 Website para uma pizzaria.
 O site foi desenvolvido utilizando boas práticas, como por exemplo tags semânticas e responsividade.
