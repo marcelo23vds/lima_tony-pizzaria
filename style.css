@@ -467,3 +467,30 @@ footer {
     }
 
 }
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo-principal {
+        fill: white;
+    }
+
+    .container-slogan {
+        display: none;
+    }
+
+    .home {
+        background-image: url(./img/background-mobile.png);
+    }
+
+    footer {
+        display: none;
+    }
+
+}
